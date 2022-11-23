@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING BAG ALMACEN DE SODAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Almacen de sodas</p>
+            <nav>
+                <a href="./index.html#sobrenosotros">Sobre Nosotros</a>
+                <a href="./index.html#italia">Sodas de origen italiano</a>
+                <a href="./index.html#francia">Sodas de origen francés</a>
+                <a href="./index.html#argentina">Sodas de origen argentino</a>
+                <a href="./index.html#contacto">Contactanos</a>
+                <a href="compras.html">
+                    <img class="d-lg-block d-none carrito" src="img/bxl-carrito.svg" alt="Carrito">
+                  </a>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="container margin">
+          <div class="row">
+            <div class="col margin center">
+              <h2>Mi Carrito</h2>
+              <ul id="carrito" class="list-group"></ul>
+              <hr id="hr-carrito">
+              <p>Total: $ <span id="total"></span></p>
+              <button id="boton-vaciar" class="btn"> Vaciar Carrito</button>
+              <button type="button" class="btn" id="boton-finalizar"> Finalizar Compra </button>
+            </div>
+          </div>
+        </div>
+      </main>
+</body>
+<script src="./carrito.js"></script>
+</html>
